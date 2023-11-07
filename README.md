@@ -9,7 +9,6 @@
 ![Badge Language] 
 [![Badge Pull Requests]][Pull Requests] 
 [![Badge Issues]][Issues] 
-[![Badge Discord]][Discord]
 
 <br>
 
