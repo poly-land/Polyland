@@ -1,5 +1,5 @@
 {
-  description = "Hyprland is a dynamic tiling Wayland compositor that doesn't sacrifice on its looks";
+  description = "Polyland is a queer-friendly dynamic tiling Wayland compositor that doesn't sacrifice on its looks";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
