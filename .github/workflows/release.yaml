@@ -9,7 +9,7 @@ jobs:
   source-tarball:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Hyprland
+      - name: Checkout Polyland
         id: checkout
         uses: actions/checkout@v3
         with:
@@ -30,8 +30,8 @@ jobs:
         name: Get latest release
         uses: pozetroninc/github-action-get-latest-release@master
         with:
-          owner: hyprwm
-          repo: Hyprland
+          owner: poly-land
+          repo: Polyland
           excludes: prerelease, draft
 
       - name: Upload to release
