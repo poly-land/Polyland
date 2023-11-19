@@ -11,6 +11,7 @@
   hyprland-protocols,
   jq,
   libdrm,
+  libGL,
   libinput,
   libxcb,
   libxkbcommon,
@@ -18,8 +19,10 @@
   pango,
   pciutils,
   systemd,
+  cmake,
   udis86,
   wayland,
+  egl-wayland,
   wayland-protocols,
   wayland-scanner,
   wlroots,
@@ -58,6 +61,7 @@ assert lib.assertMsg (!hidpiXWayland) "The option `hidpiXWayland` has been remov
       pkg-config
       makeWrapper
       wayland-scanner
+      cmake
     ];
 
     outputs = [
@@ -70,7 +74,9 @@ assert lib.assertMsg (!hidpiXWayland) "The option `hidpiXWayland` has been remov
       [
         git
         cairo
+        egl-wayland
         hyprland-protocols
+        libGL
         libdrm
         libinput
         libxkbcommon
